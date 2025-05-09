@@ -1,0 +1,14 @@
+sqlite_vec
+sqlean.py
+Pillow
+numpy
+streamlit
+pynput
+tqdm
+Pillow
+torch
+torchvision
+timm
+numpy
+onnxruntime
+requests

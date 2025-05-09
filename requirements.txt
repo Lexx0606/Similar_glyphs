@@ -1,0 +1,6 @@
+sqlite_vec
+sqlean.py
+Pillow
+numpy
+streamlit
+pynput
