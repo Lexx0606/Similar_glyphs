@@ -48,6 +48,7 @@ a) Download the full version of the database from Google Drive
 
 https://drive.google.com/file/d/1USz8r-gm9wLhrBC5od2vHLvqNlxW-2hH/view?usp=drive_link
 
+wget "drive.google.com/uc?id=1USz8r-gm9wLhrBC5od2vHLvqNlxW-2hH&export=download&confirm=yes"
 2\. To recreate your own database with embeddings:
 
 a) install dependencies:
