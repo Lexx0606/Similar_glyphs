@@ -50,7 +50,7 @@ else:
 
 timm_name = "Timm dino v2"
 resnet_name = "ResNet50"
-base_file = 'zi.db'
+base_file = 'full_zi.db'
 zi_style_set = """<p style="font-size: 60px; font-family: 'ZhuqueFangsong-Regular.ttf';">"""
 
 st.set_page_config(page_title=zi_title, layout="wide")
@@ -98,7 +98,7 @@ finally:
 # window formation
 
 st.title(zi_title)
-exit_app = st.sidebar.button("Shut Down")
+exit_app = st.sidebar.button(turn_off)
 if exit_app:
     # Close streamlit browser tab
     keyboard = Controller()
