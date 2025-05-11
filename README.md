@@ -1,4 +1,4 @@
-# Program for searching for similar hieroglyphs
+# Program for searching for similar hieroglyphs (HSK 3.0)
 
 1\. To use the program:
 
@@ -30,7 +30,7 @@ rm zi.db.zip
 
 1.2 Run start.sh.
 
-1.2 For other os:
+1.3 For other os:
 
 a) merge files with the database archive
 
@@ -41,6 +41,12 @@ c) install dependencies
 d) launch the program:
 
 *streamlit run zi_sim.py*
+
+1.4 For working with hieroglyphs beyond HSK 3.0 (total 20750 characters):
+
+a) Download the full version of the database from Google Drive
+
+https://drive.google.com/file/d/1USz8r-gm9wLhrBC5od2vHLvqNlxW-2hH/view?usp=drive_link
 
 2\. To recreate your own database with embeddings:
 
