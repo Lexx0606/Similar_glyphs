@@ -27,7 +27,7 @@ if lang_code == "ru":
     zi_title = "Поиск похожих иероглифов"
     zi_invit = "Введите иероглиф и нажмите Enter"
     base_error = "Ошибка при выполнении запроса:"
-    find_eror = "Такой иероглиф не найде."
+    find_eror = "Такой иероглиф не найден."
     find_count = "Всего отобрать иероглифов:"
     dist_text = """&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Расстояние:"""
     turn_off = "Выход"
