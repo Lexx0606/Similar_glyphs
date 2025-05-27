@@ -1,8 +1,13 @@
 import sys
-if sys.version_info[1] < 12:
-    import sqlean as sqlite3
-else:
+# сheck that the --enable-loadable-sqlite-extensions flag was enabled when compiling python
+try:
     import sqlite3
+    db = sqlite3.connect(":memory:")
+    db.enable_load_extension(True)
+except AttributeError:
+    import sqlean as sqlite3
+    db = sqlite3.connect(":memory:")
+    db.enable_load_extension(True)
 import streamlit as st
 import os
 import sqlite_vec
@@ -68,12 +73,9 @@ def deserialize_f32(byte_string):
 
 
 # creating a virtual database in memory. Only it can work with vectors
-db = sqlite3.connect(":memory:")
-db.enable_load_extension(True)
 sqlite_vec.load(db)
 db.enable_load_extension(False)
 db.execute("CREATE VIRTUAL TABLE vec_items USING vec0(zi TEXT, pinyin TEXT, ru_short_art TEXT, ru_full_art TEXT, eng_art TEXT, timm_embedding float[1024], res_embedding float[2048])")
-
 # opening a real database
 conn = sqlite3.connect(base_file)
 cursor = conn.cursor()
